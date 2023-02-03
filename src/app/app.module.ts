@@ -7,7 +7,7 @@ import { BlogModule } from './modules/blog/blog.module';
 import { ProductModule } from './modules/product/product.module';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { TopNavComponent } from './shared/components/top-nav/top-nav.component';
-
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { TopNavComponent } from './shared/components/top-nav/top-nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, ProductModule, BlogModule
+    AppRoutingModule, HttpClientModule,
+    ProductModule, BlogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
