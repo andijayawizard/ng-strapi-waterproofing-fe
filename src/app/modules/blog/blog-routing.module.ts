@@ -6,7 +6,7 @@ import { BlogComponent } from './components/blog/blog.component';
 const routes: Routes = [
   { path: '', redirectTo: 'blog', pathMatch: 'full' },
   { path: 'blog', component: BlogComponent, title: 'Blog' },
-  { path: 'blog/:id', component: BlogDetailsComponent, title: 'Blog Details' }
+  { path: 'blogs/:id', component: BlogDetailsComponent, title: 'Blog Details' }
 ];
 
 @NgModule({
