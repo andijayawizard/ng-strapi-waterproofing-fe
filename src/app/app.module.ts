@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { TopNavComponent } from './shared/components/top-nav/top-nav.component';
 import { HttpClientModule } from "@angular/common/http";
 import { MenuWebsiteModule } from './modules/menu-website/menu-website.module';
+import { ServiceModule } from './modules/service/service.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { MenuWebsiteModule } from './modules/menu-website/menu-website.module';
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule,
-    ProductModule, BlogModule, MenuWebsiteModule
+    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
