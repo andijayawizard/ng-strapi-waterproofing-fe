@@ -18,6 +18,6 @@ export class ProductService {
     return this.http.get<Product[]>(`${env.local}/api/products`, this.httpOptions)
   }
   getDetails(id: string): Observable<Product> {
-    return this.http.get<Product>(`${env.local}/api/products/:id`)
+    return this.http.get<Product>(`${env.local}/api/products/${id}`, this.httpOptions)
   }
 }
