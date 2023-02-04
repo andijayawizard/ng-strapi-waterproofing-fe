@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import env from 'src/environments/environment';
 import { Blog } from '../../interfaces/blog';
 import { BlogService } from '../../services/blog.service';
 
@@ -9,6 +10,7 @@ import { BlogService } from '../../services/blog.service';
 })
 export class BlogComponent {
   blog: any | Blog[] = []
+  apiUrl: string = env.apiUrl
   constructor(private blogService: BlogService) { }
   ngOnInit(): void { this.getAll() }
   getAll(): void {
