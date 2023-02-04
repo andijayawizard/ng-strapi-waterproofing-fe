@@ -13,7 +13,7 @@ export class BlogComponent {
   ngOnInit(): void { this.getAll() }
   getAll(): void {
     this.blogService.getAll().subscribe({
-      next: (res: any) => { this.blog = res.data },
+      next: (res: any) => { this.blog = res.items },
       error: (err) => {
         console.log('http error: ', err);
       }
