@@ -11,7 +11,7 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { }
   getAll(): Observable<Service[]> {
-    return this.http.get<Service[]>(`${env.apiUrl}/api/services/list.php?where=1&pub=1`)
+    return this.http.get<Service[]>(`${env.apiUrl}/api/services/list.php`)
   }
   getDetails(id: string): Observable<Service> {
     return this.http.get<Service>(`${env.apiUrl}/api/services/detail.php?id=${id}`)

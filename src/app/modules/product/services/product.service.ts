@@ -15,9 +15,11 @@ export class ProductService {
   }
   constructor(private http: HttpClient) { }
   getAll(): Observable<Product[]> {
-    return this.http.get<Product[]>(`${env.local}/api/products`, this.httpOptions)
+    return this.http.get<Product[]>(`${env.apiUrl}/api/products/list.php?where=1&pub=1`)
+    // return this.http.get<Product[]>(`${env.local}/api/products`, this.httpOptions)
   }
   getDetails(id: string): Observable<Product> {
-    return this.http.get<Product>(`${env.local}/api/products/${id}`, this.httpOptions)
+    return this.http.get<Product>(`${env.apiUrl}/api/products/detail.php?id=${id}`)
+    // return this.http.get<Product>(`${env.local}/api/products/${id}`, this.httpOptions)
   }
 }
