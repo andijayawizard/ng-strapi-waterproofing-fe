@@ -14,6 +14,7 @@ import { ProjectModule } from './modules/project/project.module';
 import { AboutModule } from './modules/about/about.module';
 import { ReferenceModule } from './modules/reference/reference.module';
 import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
+import { ImageSlideModule } from './modules/image-slide/image-slide.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { PageHeaderComponent } from './shared/components/page-header/page-header
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule,
-    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule, ReferenceModule
+    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule, ReferenceModule, ImageSlideModule
   ],
   providers: [],
   bootstrap: [AppComponent]
