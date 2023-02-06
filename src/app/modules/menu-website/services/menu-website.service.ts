@@ -13,4 +13,7 @@ export class MenuWebsiteService {
   getAll(): Observable<MenuWebsite[]> {
     return this.http.get<MenuWebsite[]>(`${env.apiUrl}/api/menuweb/list.php?where=1&pub=1`)
   }
+  getDetails(id: string): Observable<MenuWebsite> {
+    return this.http.get<MenuWebsite>(`${env.apiUrl}/api/menuweb/detail.php?id=${id}`)
+  }
 }

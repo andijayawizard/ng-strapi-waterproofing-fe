@@ -6,8 +6,8 @@ import { ServiceComponent } from './components/service/service.component';
 const routes: Routes = [
   { path: '', redirectTo: 'services', pathMatch: 'full' },
   { path: 'services', component: ServiceComponent, title: 'Services' },
-  // { path: 'services/:id', component: ServiceDetailsComponent, title: 'Service Details' },
-  { path: ':seo', component: ServiceDetailsComponent, title: 'Service Details' }
+  { path: 'services/:id', component: ServiceDetailsComponent, title: 'Service Details' },
+  // { path: ':seo', component: ServiceDetailsComponent, title: 'Service Details' }
 ];
 
 @NgModule({

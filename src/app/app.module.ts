@@ -10,6 +10,8 @@ import { TopNavComponent } from './shared/components/top-nav/top-nav.component';
 import { HttpClientModule } from "@angular/common/http";
 import { MenuWebsiteModule } from './modules/menu-website/menu-website.module';
 import { ServiceModule } from './modules/service/service.module';
+import { ProjectModule } from './modules/project/project.module';
+import { AboutModule } from './modules/about/about.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { ServiceModule } from './modules/service/service.module';
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule,
-    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule
+    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
