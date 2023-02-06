@@ -1,0 +1,27 @@
+<div class="faqs">
+  <div class="container">
+    <div class="section-header text-center">
+      <p>References</p>
+      <h2>References</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="accordion-1">
+          <div *ngFor="let data of data" class="card wow fadeInRight" data-wow-delay="0.1s">
+            <div class="card-header">
+              <a class="card-link collapsed" data-toggle="collapse" href="#collapse{{data.id}}">
+                {{data.nama}}
+              </a>
+            </div>
+            <div id="collapse{{data.id}}" class="collapse" data-parent="#accordion-1">
+              <div class="card-body">
+                {{data.rgks}}
+                <div [innerHTML]="data.ktrg|mdToHtml:'html'"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
