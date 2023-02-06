@@ -13,12 +13,14 @@ import { ServiceModule } from './modules/service/service.module';
 import { ProjectModule } from './modules/project/project.module';
 import { AboutModule } from './modules/about/about.module';
 import { ReferenceModule } from './modules/reference/reference.module';
+import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     TopNavComponent,
+    PageHeaderComponent,
   ],
   imports: [
     BrowserModule,

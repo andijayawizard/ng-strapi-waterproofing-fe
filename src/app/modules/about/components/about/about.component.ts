@@ -9,6 +9,7 @@ import { AboutService } from '../../services/about.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  title: string = 'About Us'
   data: any
   constructor(private aboutService: AboutService) { }
   ngOnInit(): void { this.aboutUs() }
