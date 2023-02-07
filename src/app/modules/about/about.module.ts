@@ -13,6 +13,7 @@ import { PipeModule } from 'src/app/shared/modules/pipe/pipe.module';
   imports: [
     CommonModule,
     AboutRoutingModule, PipeModule
-  ]
+  ],
+  exports: [AboutComponent]
 })
 export class AboutModule { }
