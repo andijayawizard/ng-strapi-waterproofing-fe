@@ -15,6 +15,7 @@ import { PipeModule } from 'src/app/shared/modules/pipe/pipe.module';
   imports: [
     CommonModule,
     ServiceRoutingModule, PipeModule
-  ]
+  ],
+  exports: [ServiceComponent]
 })
 export class ServiceModule { }

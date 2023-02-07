@@ -15,7 +15,7 @@ import { AboutModule } from './modules/about/about.module';
 import { ReferenceModule } from './modules/reference/reference.module';
 import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
 import { ImageSlideModule } from './modules/image-slide/image-slide.module';
-import { FeatureComponent } from './shared/components/feature/feature.component';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -23,12 +23,11 @@ import { FeatureComponent } from './shared/components/feature/feature.component'
     FooterComponent,
     TopNavComponent,
     PageHeaderComponent,
-    FeatureComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule,
-    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule, ReferenceModule, ImageSlideModule
+    ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule, ReferenceModule, ImageSlideModule, HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
