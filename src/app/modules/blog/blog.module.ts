@@ -17,6 +17,7 @@ import { PipeModule } from 'src/app/shared/modules/pipe/pipe.module';
   imports: [
     CommonModule,
     BlogRoutingModule, PipeModule
-  ]
+  ],
+  exports: [BlogComponent]
 })
 export class BlogModule { }

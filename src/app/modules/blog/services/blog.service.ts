@@ -18,4 +18,8 @@ export class BlogService {
     // return this.httpClient.get<Blog>(`${env.apiUrl}/api/blogs/${id}`)
     return this.httpClient.get<Blog>(`${env.apiUrl}/api/blog/detail.php?id=${id}`)
   }
+  getAllHome(): Observable<Blog[]> {
+    // return this.httpClient.get<Blog[]>(`${env.apiUrl}/api/blogs`)
+    return this.httpClient.get<Blog[]>(`${env.apiUrl}/api/blog/list.php?where=1&pub=1&limit=3`)
+  }
 }

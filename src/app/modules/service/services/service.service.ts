@@ -16,4 +16,7 @@ export class ServiceService {
   getDetails(id: string): Observable<Service> {
     return this.http.get<Service>(`${env.apiUrl}/api/services/detail.php?id=${id}`)
   }
+  getAllHome(): Observable<Service[]> {
+    return this.http.get<Service[]>(`${env.apiUrl}/api/services/list.php?order_by=rand()&limit=6`)
+  }
 }
