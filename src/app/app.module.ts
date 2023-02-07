@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { AboutModule } from './modules/about/about.module';
 import { ReferenceModule } from './modules/reference/reference.module';
 import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
 import { ImageSlideModule } from './modules/image-slide/image-slide.module';
+import { FeatureComponent } from './shared/components/feature/feature.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ImageSlideModule } from './modules/image-slide/image-slide.module';
     FooterComponent,
     TopNavComponent,
     PageHeaderComponent,
+    FeatureComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { ImageSlideModule } from './modules/image-slide/image-slide.module';
     ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule, ReferenceModule, ImageSlideModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

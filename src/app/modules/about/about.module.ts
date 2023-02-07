@@ -14,6 +14,6 @@ import { PipeModule } from 'src/app/shared/modules/pipe/pipe.module';
     CommonModule,
     AboutRoutingModule, PipeModule
   ],
-  exports: [AboutComponent]
+  exports: [AboutComponent],
 })
 export class AboutModule { }

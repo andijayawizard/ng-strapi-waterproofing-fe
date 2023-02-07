@@ -1,5 +1,17 @@
 <div class="wrapper">
   <app-top-nav></app-top-nav>
+  <!-- Page Header Start -->
+  <div *ngIf="!isHomeRouter()">
+    <app-page-header></app-page-header>
+  </div>
+  <!-- Page Header End -->
+
+  <div *ngIf="isHomeRouter()">
+    <app-image-slide></app-image-slide>
+  </div>
+  <div *ngIf="isHomeRouter()">
+    <app-feature></app-feature>
+  </div>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>

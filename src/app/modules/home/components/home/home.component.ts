@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   constructor(private router: Router) { }
-  isHomeRouter() {
-    return this.router.url == '/'
-  }
+  // isHomeRouter() {
+  //   return this.router.url == '/'
+  // }
 }
