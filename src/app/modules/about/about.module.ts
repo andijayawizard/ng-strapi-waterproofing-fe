@@ -8,6 +8,7 @@ import { BannerComponent } from 'src/app/shared/components/banner/banner.compone
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
 import { ProductListComponent } from 'src/app/shared/components/product-list/product-list.component';
 import { ProductComponent } from 'src/app/shared/components/product/product.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { ProductComponent } from 'src/app/shared/components/product/product.comp
   ],
   imports: [
     CommonModule,
-    AboutRoutingModule, PipeModule
+    AboutRoutingModule, PipeModule, InfiniteScrollModule
   ],
   exports: [AboutComponent, BannerComponent, HeaderComponent, ProductListComponent, ProductComponent],
 })
