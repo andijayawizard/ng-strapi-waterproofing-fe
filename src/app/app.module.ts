@@ -16,6 +16,10 @@ import { ReferenceModule } from './modules/reference/reference.module';
 import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
 import { ImageSlideModule } from './modules/image-slide/image-slide.module';
 import { HomeModule } from './modules/home/home.module';
+import { StoreModule } from '@ngrx/store';
+import { ShopReducer } from './store/reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { ShopEffects } from './store/effects';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,10 @@ import { HomeModule } from './modules/home/home.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule,
+    AppRoutingModule, HttpClientModule, StoreModule.forRoot({
+      // shop: ShopReducer
+    }),
+    EffectsModule.forRoot([ShopEffects]),
     ProductModule, BlogModule, MenuWebsiteModule, ServiceModule, ProjectModule, AboutModule, ReferenceModule, ImageSlideModule, HomeModule
   ],
   providers: [],
